@@ -1,0 +1,28 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = 'has("python3")'
+on_event = 'InsertEnter' #InsertEnter = 挿入モードを開始したとき
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+if = 'has("python3")'
+on_cmd = 'Denite'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+depends = 'denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+depends = 'deinte.nvim'
+on_event = 'YextYankPost'
